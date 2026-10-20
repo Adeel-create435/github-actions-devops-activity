@@ -1,0 +1,16 @@
+
+name: Variables and Secrets
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  variables-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display Repository Variable
+        run: echo "Student Name: ${{ vars.STUDENT_NAME }}"
