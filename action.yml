@@ -1,0 +1,6 @@
+
+name: 'Adeel Greeting'
+description: 'A simple custom JavaScript action'
+runs:
+  using: 'node20'
+  main: 'index.js'
